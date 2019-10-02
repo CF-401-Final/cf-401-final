@@ -21,7 +21,7 @@ Coming soon!
 - [User stories](coming soon)
 - [Team Agreement](projectDocs/TeamAgreement.md)
 - [Conflict Plan](projectDocs/conflictPlan.md)
-- [Trello Board](Soon!)
+- [Trello Board](https://trello.com/b/Rm0s1xSj/cf-401-final)
 - [ER Diagram](Soon!)
 
 
