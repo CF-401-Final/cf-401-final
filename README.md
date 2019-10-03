@@ -8,7 +8,7 @@ Presentation deck: Coming Soon!
 
 ## Project overview:
 
-TBD
+Hands of Five is an app that allows instructors to gauge the understanding of their students in real time. Students are able to share their current level of understanding in an anonynmous way, allowing for more honest feedback.
 
 ### Project documentation
 
