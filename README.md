@@ -1,6 +1,6 @@
 # cf-401-final
-Team members: Travis Cox, Trevor Dobson, Steve Grant, Jane Hur, Renee Messick
 
+Team members: Travis Cox, Trevor Dobson, Steve Grant, Jane Hur, Renee Messick
 
 Deployed site: Coming Soon!
 
@@ -23,11 +23,8 @@ Coming soon!
 - [Conflict Plan](projectDocs/conflictPlan.md)
 - [Trello Board](https://trello.com/b/Rm0s1xSj/cf-401-final)
 - [ER Diagram](Soon!)
-
+- [User Stories](projectDocs/userStories.md)
 
 ## Screenshots
 
-
-
 ## Resources:
-
