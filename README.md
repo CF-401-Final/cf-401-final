@@ -12,7 +12,9 @@ Hands of Five is an app that allows instructors to gauge the understanding of th
 
 ### Project documentation
 
-**Wireframes**
+![wireframes](./assets/wireframes.png)
+
+[Wireframes](https://whimsical.com/Nc2w7CeyFZ73DDXcEMqgTB#2Ux7TurymNB6r2PosD1R)
 
 Coming soon!
 
