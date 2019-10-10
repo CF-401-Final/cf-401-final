@@ -17,9 +17,13 @@ Hands of Five is an app that allows instructors to gauge the understanding of th
 
 ### React
 
-Our front end is a built as a [React](https://reactjs.org/) app. An instructor is able to post a question which students can respond to. Data is sent and received by the front end through an API Gateway Websocket connection. Results are updated and displayed in real time! 
+Our front end is a built as a [React](https://reactjs.org/) app. An instructor is able to post a question which students can respond to. Data is sent and received by the front end through an API Gateway Websocket connection. Results are updated and displayed in real-time! 
 
-We used [ReactBootstrap](https://react-bootstrap.github.io/) to design and style our app. 
+Also used in our frontend: 
+
+- [ReactBootstrap](https://react-bootstrap.github.io/) 
+- [Chart.js](https://www.chartjs.org/docs/latest/)
+- [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2) 
 
 ### GitHub
 
@@ -31,17 +35,25 @@ We used [ReactBootstrap](https://react-bootstrap.github.io/) to design and style
 
 ### AWS Amplify
 
-We used an AWS service called [Amplify](https://aws.amazon.com/amplify/) to automate the build and deployment of our front end. Amplify was integrated with our frontend GitHub repo, so that updates to master would automatically start a process to build and publish our React app. 
+We used an AWS service called [Amplify](https://aws.amazon.com/amplify/) to automate the build and deployment of our frontend. Amplify was integrated with one of our GitHub repos, so that updates to master would automatically start a process to build and publish our React app. 
 
-![Amplicy](./assets/amplify.png)
+![Amplify](./assets/amplify.png)
 
 
 ### AWS API Gateway Websockets
+
+Using WebSocket APIs in AWS's [API Gateway](https://aws.amazon.com/api-gateway/), we were able to create a two-way connection between users and our backend. This allows messages to be sent and received in real time without the client explicitly making requests. In our app, we use this connection to allow students to submit responses which are then manipulated and displayed on the frontend in immediately.
+
+This [tutorial](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-in-amazon-api-gateway/) allowed us to make the basic connections for our app. 
+
 ### AWS Lambda Functions
-- Connect
-- Send/Receive Data
-- Disconnect
+- [Connect](https://github.com/CF-401-Final/hands-lambda/blob/master/connect.js): When a new client connects to the API, their connection ID is added to a DynamoDB. 
+- [Send/Receive Data](https://github.com/CF-401-Final/hands-lambda/blob/master/sendVote.js): This Lambda function is invoked when clients submit responses. Responses are saved in a DynamoDB and updated results are then sent to all connected clients, which can be seen through the data displayed on screen.
+- [Disconnect](https://github.com/CF-401-Final/hands-lambda/blob/master/disconnect.js): Removes the record corresponding with the specified connectionId value in DynamoDB.
+
 ### DynamoDB
+
+[DynamoDB](https://aws.amazon.com/dynamodb/) is used to keep track each of the connected clients and any data they submit through the frontend. 
 
 ## Project documentation
 
@@ -55,4 +67,3 @@ We used an AWS service called [Amplify](https://aws.amazon.com/amplify/) to auto
 
 ## Screenshots
 
-## Resources:
