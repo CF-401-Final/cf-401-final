@@ -2,8 +2,7 @@
 
 Team members: Travis Cox, Trevor Dobson, Steve Grant, Jane Hur, Renee Messick
 
-Deployed site: https://master.d2681ag10jil74.amplifyapp.com/
-
+Deployed site: https://dev.d2681ag10jil74.amplifyapp.com/
 
 ## Project overview:
 
