@@ -64,5 +64,4 @@ This [tutorial](https://aws.amazon.com/blogs/compute/announcing-websocket-apis-i
 - [User Stories](projectDocs/userStories.md)
 - [Domain Modeling](projectDocs/domainModel.md)
 
-## Screenshots
 
